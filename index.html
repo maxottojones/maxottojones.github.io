@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Otto Jones</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --btn-bg: #eeeeee;
+      --btn-text: #111111;
+
+      --institution: #1a7a3e;
+      --person:      #c45e00;
+      --achievement: #6b35b8;
+      --goal:        #b5181b;
+    }
+
+    body.dark {
+      --bg: #0f0f0f;
+      --text: #dddddd;
+      --btn-bg: #222222;
+      --btn-text: #dddddd;
+
+      --institution: #4dc97a;
+      --person:      #ffaa55;
+      --achievement: #bb88ff;
+      --goal:        #ff6b6b;
+    }
+
+    body {
+      max-width: 680px;
+      margin: 80px auto;
+      padding: 0 24px;
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text);
+      background: var(--bg);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    button {
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 12px;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      border: none;
+      padding: 5px 12px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    img {
+      float: right;
+      width: 200px;
+      margin: 6px 0 24px 36px;
+      display: block;
+    }
+
+    p { margin: 0 0 18px 0; }
+
+    /* color classes */
+    .institution { color: var(--institution); }
+    .person      { color: var(--person); }
+    .achievement { color: var(--achievement); }
+    .goal        { color: var(--goal); }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <h1>Max Otto Jones</h1>
+    <button onclick="document.body.classList.toggle('dark')">light / dark</button>
+  </div>
+
+  <img src="photo.jpg" alt="Max Otto Jones" />
+
+  <p>
+    I am a Cognitive Science major with minors in Neuroscience and Mathematics at
+    <span class="institution">Carleton College</span>, where I study the neural and hormonal
+    control of social behavior in a snappy Central American rodent under the mentorship of
+    <span class="person">Dr. Joel Tripp</span>. I am also a
+    <span class="achievement">Research Assistant</span> in the lab of
+    <span class="person">Dr. David Herzfeld</span> at the
+    <span class="institution">University of Wisconsin School of Medicine &amp; Public Health</span>,
+    where I build computational tools to address foundational questions in neuroscience. As a
+    <span class="achievement">2026 National Science Foundation SURE REU Fellow</span> at the
+    <span class="institution">UW College of Engineering</span>, co-advised by
+    <span class="person">Dr. Aaron Suminski</span> in Neurosurgery and
+    <span class="person">Dr. Herzfeld</span> in Neuroscience, I design and conduct experiments
+    in rhesus monkeys to investigate the neural basis of motor memories in the cerebellum.
+  </p>
+
+  <p>
+    I believe that the most important questions in neuroscience live at the intersection of
+    physiology, computation, and behavior, and that no single level of analysis is sufficient
+    on its own. A behavior without its mechanism is a story without an explanation; a mechanism
+    without its behavior is a solution without a problem. My aim is to work across these levels
+    with equal rigor, building an integrative understanding to move the field forward.
+    My studies at Carleton are laying that foundation.
+  </p>
+
+  <p>
+    I plan to pursue a <span class="goal">PhD in Neuroscience or Biomedical Engineering</span>,
+    focusing on learning and the neural control of movement, with the broader goal of
+    translating scientific insight into real-world impact.
+  </p>
+
+</body>
+</html>
